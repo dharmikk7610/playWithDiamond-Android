@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_game"
+    tools:context="Activities.Gameactivity">
+
+
+    <!-- Player Name -->
+
+    <TextView
+        android:id="@+id/tvPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Player"
+        android:textColor="#FFD700"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+
+
+    <!-- Diamond Balance -->
+
+    <LinearLayout
+        android:id="@+id/diamondCard"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/tvPlayer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/game_card"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💎 Diamonds"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/tvDiamond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:textColor="#FFD700"
+            android:textSize="35sp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+
+    <!-- Score -->
+
+    <LinearLayout
+        android:id="@+id/scoreCard"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/diamondCard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/game_card"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏆 Highest Score"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#FFD700"
+            android:textSize="30sp"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <!-- Play Button -->
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/scoreCard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="START GAME 🎮"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_bg"/>
+
+
+
+</RelativeLayout>
